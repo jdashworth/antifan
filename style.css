@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'hack-regular';
+    src: url('../fonts/webfonts/hack-regular/hack-regular.woff2') format('woff2');
+         
+    font-weight: bold;
+    font-style: normal;
+}
+@media screen and (max-width: 900px) {
+    *{
+    display:block;
+    flex-direction: column;
+    margin: 1px;
+        
+
+    }
+  body {height: 100vh; }
+  
+    
+    main article.videos  {
+       justify-content: center;
+        margin: 1rem;
+        flex-wrap: wrap;
+
+    }
+ 
+}
+
+    html{
+        margin:0 auto;
+     
+    font-family: 'hack-regular';
+    color:#7af0c8;   
+
+  
+   
+
+ 
+    
+
+
+    
+}
+.image {
+    width: 450px;
+    height: auto;
+  border-radius: 50%;
+animation: turn 30s 0s infinite;
+border: #7af0c8 1px double;
+}
+@keyframes turn {
+   0% {rotate: 0deg;transform:scale(100%)}
+    
+    50%{rotate: 360deg;  transform:scale(0%); opacity: 0%;
+    }
+   
+    100%{rotate: 0deg;transform:scale(100%)}
+}
+
+body {
+    height: 100vh; 
+    list-style: none;
+       background-image: url(../IMG/back2.png) !important;
+     background-size:contain;
+     display: flex;
+     flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
+   
+    
+
+
+    
+    
+
+ 
+    
+
+
+
+
+
+}
+article.videos h1{
+    flex: 1;
+    text-decoration-style:double;
+    color:#7af0c8;   
+    animation: turn 30s 0s infinite reverse;
+
+    flex-wrap: wrap;   
+    font-style: oblique;
+}
+article.videos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-style: oblique;
+    padding: 1rem;
+    margin: 2rem;
+
+
+}
+div.next{
+    display: flex;
+    flex-direction: column;
+
+} 
+    a {
+    list-style: none;
+    font-family: 'hack-regular';
+    color:#7af0c8;   
+    text-decoration-style:double;
+
+    
+
+}
+a:hover{
+cursor: pointer;
+
+}
+a:after
+{
+    text-decoration-style: dotted;
+list-style: none;
+color: #7af0c8;
+}
+    div.next a:nth-child(1) {
+animation: right 20s infinite;}
+div.next a:nth-child(2) {
+    animation: left 20s reverse infinite;}
+
+
+@keyframes right {
+    
+       0% {opacity: 10%;
+    position: relative; left:10%;}
+    
+
+50%{ opacity:100%;
+    position: relative; left: 70%;}
+
+100% {opacity: 10%;
+    position: relative; left: 10%;}
+}
+@keyframes left {
+    
+    0% {opacity: 10%;
+ position: relative; left:  10%;}
+ 
+
+50%{ opacity:100%;
+ position: relative; left:  70%;}
+
+100% {opacity: 10%;
+ position: relative; left:  10%;}
+}
+button {
+    background:none;
+    display: flex;
+    justify-content: center;
+    color: #7af0c8;
+    border-color: #7af0c8 ;
+    ;
+}
+button:hover{
+    cursor: pointer;
+
+}
